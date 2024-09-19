@@ -1,0 +1,59 @@
+@use 'colors' as c;
+
+* {
+  all: unset;
+}
+
+.statusbar, .popupdate {
+  all: unset;
+  font-family: "JetBrainsMono Nerd Font Mono";
+  font-weight: normal;
+  background-color: c.$base01;
+}
+.bar {
+  padding: 2px 0px 2px 0px;
+}
+
+.workspace button {
+  font-size: 14px;
+  color: c.$base01;
+}
+.workspace button:hover {
+  color: c.$base0D;
+}
+.activeworkspace button {
+  color: c.$base08;
+}
+.currentworkspace button {
+  color: c.$base0E;
+}
+
+.widget {
+  font-size: 12px;
+  padding: 0px 5px 0px 5px;
+}
+.network-widget {
+  color: c.$base0B;
+}
+.cpu-widget {
+  color: c.$base0D;
+}
+.ram-widget {
+  color: c.$base0A;
+}
+.volume-widget {
+  color: c.$base0E;
+}
+.battery-widget {
+  color: c.$base09;
+}
+
+.time {
+  font-size: 12px;
+  padding: 0px 5px 0px 5px;
+  color: c.$base0C;
+}
+
+.separator {
+  font-size: 15px;
+}
