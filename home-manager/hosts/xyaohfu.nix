@@ -15,7 +15,7 @@
   # --- Session ---
   home.sessionVariables = {
     EDITOR = "nvim";
-    TERM = "alacritty";
+    TERM = "kitty";
   };
 
   # --- Colors ---

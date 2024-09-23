@@ -149,7 +149,7 @@
         key_press_enables_dpms = true;
 
         enable_swallow = true;
-        swallow_regex = "^(Alacritty)$";
+        swallow_regex = "^(Kitty)$";
       };
     };
   };
