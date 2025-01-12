@@ -18,7 +18,7 @@
       name = "JetBrainsMono Nerd Font Mono";
       size = 9.5;
     };
-    theme = "Gruvbox Material Dark Hard";
+    themeFile = "GruvboxMaterialDarkHard";
   };
 
 }

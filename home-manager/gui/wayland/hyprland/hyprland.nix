@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./windowrules.nix
+    ./rules.nix
     ./keybinds.nix
     ./execonce.nix
   ];
@@ -77,7 +77,6 @@
         special_scale_factor = 0.9;
         new_status = "slave";
         new_on_top = false;
-        no_gaps_when_only = 1; # 0: enabled, 1: without border, 2: with border
       };
       general = with config.colorScheme.palette; {
         layout = "master";
@@ -106,15 +105,6 @@
         inactive_opacity = 1;
         fullscreen_opacity = 1;
 
-        drop_shadow = true;
-        shadow_range = 2;
-        shadow_render_power = 3;
-        shadow_ignore_window = true;
-        shadow_offset = "0 0";
-        shadow_scale = 1.0;
-        "col.shadow" = "rgba(${base01}ff)";
-        "col.shadow_inactive" = "rgba(${base01}ff)";
-
         dim_inactive = false;
         dim_strength = 0.0;
         dim_special = 0.0;
@@ -125,6 +115,16 @@
           size = 3;
           passes = 5;
           vibrancy = 1;
+        };
+
+        shadow = {
+          enabled = false;
+          range = 2;
+          render_power = 3;
+          ignore_window = true;
+          scale = 1.0;
+          color = "rgba(${base01}ff)";
+          offset = "0 0";
         };
       };
       animations = {
